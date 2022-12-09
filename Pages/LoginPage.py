@@ -2,6 +2,7 @@ from selenium.webdriver.common.by import By
 
 from Pages.BasePage import BasePage
 from Config.Locators import Locators
+from Config.TestData import TestData
 
 class LoginPage(BasePage):
 
@@ -15,6 +16,7 @@ class LoginPage(BasePage):
     def __init__(self, driver):
         super().__init__(driver)
         self.driver = driver
+        self.driver.get(TestData.BASE_URL)
 
     """Page actions for Login page"""
     def getTitleLoginPage(self ,title):
