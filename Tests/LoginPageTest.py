@@ -9,7 +9,7 @@ class TestLoginPage(BaseTest):
     # pip install pytest-html
     # console command pytest Tests/LoginPageTest.py -v --html=reports/report.html (with report)
 
-    def test_sigup_link_visible(self):
+    def test_signup_link_visible(self):
         self.loginPage = LoginPage(self.driver)
         flag = self.loginPage.isSingupLinkExist()
         assert flag
