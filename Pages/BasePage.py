@@ -13,14 +13,14 @@ class BasePage:
     def doClick(self, byLocator):
         WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(byLocator)).click()
 
-    def sendKeys(self, byLocator, text):
+    def dosendKeys(self, byLocator, text):
         WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(byLocator)).send_keys(text)
 
     def getElementText(self, byLocator):
         element = WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(byLocator))
         return element.text
 
-    def isEnabled(self, byLocator):
+    def isVisible(self, byLocator):
         element = WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(byLocator))
         return bool(element)
 
