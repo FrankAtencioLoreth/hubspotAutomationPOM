@@ -1,6 +1,16 @@
 class Locators:
-
+    """Login page"""
     EMAIL_INPUT = "username"
     PASSWORD_INPUT = "password"
     LOGIN_BUTTON = "loginBtn"
     SIGNUP_LINK = "Registrarme"
+    MODAL_XPATH = "//header[contains(@class,'private-modal__header')]"
+    MODAL_BUTTON_XPATH = "//footer/descendant::button"
+
+    """Home page"""
+    GOTODASHBOARD_XPATH = "//a[contains(@class, 'uiButton')]"
+    REPORTS_MENU_LINK = "nav-primary-reports-branch"
+    ITEM_REPORTS_MENU_LINK = "nav-secondary-dashboards"
+    HEADER_CSS = "h1.dashboard-selector__title"
+    ACCOUNT_NAME_XPATH = "//span[contains(@class,'account-name')]"
+    NAVIGATION_SETTING_LINK = "navSetting"
